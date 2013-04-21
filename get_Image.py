@@ -5,15 +5,12 @@ import re
 #gets the input from the user
 url = raw_input("Type a sub-reddit site or type 0 to exit: ")
 
-
-
 while url != '0':
     
     while url.isdigit() == 1: #Checks if the user type a number
         print 'This is not a sub-reddit website!'
         url = raw_input("Type a sub-Reddit site or type 0 to exit: ")
-
-        
+    
     if url.find('http://') != 0:
         url = 'http://' + url
         
